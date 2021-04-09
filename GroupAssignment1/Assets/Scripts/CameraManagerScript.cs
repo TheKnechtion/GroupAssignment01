@@ -7,10 +7,10 @@ public class CameraManagerScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public Camera mainCamera;
-    public Camera picInPic;
-    public Camera sideViewCamera;
-    public Camera splitUpper;
-    public Camera splitLower;
+    public Camera pictureInPicture;
+    public Camera SideViewCamera;
+    public Camera SplitScreenUpper;
+    public Camera SplitScreenLower;
 
     void Start()
     {
@@ -20,7 +20,7 @@ public class CameraManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void OnSliderValueChanged(float value)
