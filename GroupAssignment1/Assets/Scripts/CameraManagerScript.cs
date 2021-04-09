@@ -14,7 +14,7 @@ public class CameraManagerScript : MonoBehaviour
 
     void Start()
     {
-        
+        //possible addition 
     }
 
     // Update is called once per frame
