@@ -829,10 +829,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1326618327}
-  picInPic: {fileID: 50881734}
-  sideViewCamera: {fileID: 963194227}
-  splitUpper: {fileID: 623505726}
-  splitLower: {fileID: 395713244}
+  pictureInPicture: {fileID: 50881734}
+  SideViewCamera: {fileID: 963194227}
+  SplitScreenUpper: {fileID: 623505726}
+  SplitScreenLower: {fileID: 395713244}
 --- !u!1 &502291135
 GameObject:
   m_ObjectHideFlags: 0
