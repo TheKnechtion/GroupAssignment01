@@ -51,6 +51,39 @@ public class CameraManagerScript : MonoBehaviour
     {
         Debug.LogFormat("{0}:{1}", change.itemText.text,
             change.value);
+        {
+        case 0:
+         mainCamera.enabled = true;
+         pictureInPictureCam.enabled = false;
+         SideViewCamera.enabled = false;
+         SplitScreenUpper.enabled = false;
+         SplitScreenLower.enabled = false;
+         
+         break;
+        case 1:
+         mainCamera.enabled = false;
+         pictureInPictureCam.enabled = false;
+         SideViewCamera.enabled = true;
+         SplitScreenUpper.enabled = false;
+         SplitScreenLower.enabled = false;
+         
+         break;
+         case 2:
+         mainCamera.enabled = true;
+         pictureInPictureCam.enabled = true;
+         SideViewCamera.enabled = false;
+         SplitScreenUpper.enabled = false;
+         SplitScreenLower.enabled = false;
+         break;
+         
+         case 3:
+         mainCamera.enabled = false;
+         pictureInPictureCam.enabled = false;
+         SideViewCamera.enabled = false;
+         SplitScreenUpper.enabled = true;
+         SplitScreenLower.enabled = true;
+         break;
+        }
     }
 
 
