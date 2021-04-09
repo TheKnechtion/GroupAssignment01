@@ -25,7 +25,14 @@ public class CameraManagerScript : MonoBehaviour
 
     public void OnSliderValueChanged(float value)
     {
-        Debug.LogFormat("Slider:{0}", value);
+        if (mainCamera.enabled)
+            mainCamera.nearClipPlane = value; 
+
+        else if (SideViewCamera.enabled) 
+            SideViewCamera.nearClipPlane = value;
+
+        else if (SplitScreenLower.enabled) 
+            SplitScreenLower.nearClipPlane = value;
     }
 
     public void SwitchViews (Dropdown change)
